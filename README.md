@@ -28,4 +28,4 @@ Computer Science student at Taif University, expected to graduate in 2027, passi
 
 ## 🔗 Live Website
 
-👉 [Visit the website](https://jzi88.github.io/my_potfolio/)
+👉 [Visit the website](https://jzi88.github.io/my_portfolio/)
