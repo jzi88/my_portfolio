@@ -26,3 +26,6 @@ A clean, modern personal portfolio website showcasing my journey as a Computer S
 ## 👩‍💻 About Me
 Computer Science student at Taif University, expected to graduate in 2027, passionate about Cybersecurity, Web Development, and Artificial Intelligence.
 
+## 🔗 Live Website
+
+👉 [Visit the website](https://jzi88.github.io/my_potfolio/)
