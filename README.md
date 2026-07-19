@@ -26,6 +26,3 @@ A clean, modern personal portfolio website showcasing my journey as a Computer S
 ## 👩‍💻 About Me
 Computer Science student at Taif University, expected to graduate in 2027, passionate about Cybersecurity, Web Development, and Artificial Intelligence.
 
-## 📬 Contact
-- [GitHub](https://github.com/jzi88)
-- [LinkedIn](https://www.linkedin.com/in/jazi-alghamdi-b6480a381)
