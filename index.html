@@ -3,69 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Aljazi Alghamdi — Computer Science student at Taif University, interested in Cybersecurity, Web Development, and AI.">
 <title>Jazi Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<style>
-:root {
-  --accent: #7288A7;
-  --text: #21221F;
-  --sub: #4D5130;
-
-  --bg-image: url('https://i.pinimg.com/1200x/e5/97/0e/e5970ed272420d6352b190b6c911c621.jpg');
-}
-
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-
-body {
-  font-family: Poppins, sans-serif;
-
-  background-image: var(--bg-image);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-
-  color: var(--text);
-}
-
-body:before, body:after { display: none; }
-
-header { position: sticky; top: 0; background: rgba(255, 255, 255, .35); backdrop-filter: blur(15px); padding: 18px 8%; display: flex; justify-content: space-between; }
-nav a { margin-left: 20px; color: var(--text); text-decoration: none; }
-section { max-width: 1100px; margin: auto; padding: 90px 8%; }
-.hero { min-height: 85vh; display: flex; flex-direction: column; justify-content: center; }
-h1 { font: 700 64px Outfit, sans-serif; }
-h2 { font: 600 34px Outfit, sans-serif; margin-bottom: 15px; }
-.sub { color: var(--sub); max-width: 650px; }
-.btn { display: inline-block; margin-top: 30px; background: var(--accent); padding: 14px 28px; border-radius: 40px; color: #fff; text-decoration: none; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
-.card { background: rgba(255, 255, 255, .45); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, .5); padding: 24px; border-radius: 22px; box-shadow: 0 10px 30px rgba(0, 0, 0, .08); }
-small { color: var(--sub); }
-footer { text-align: center; padding: 40px; color: var(--sub); }
-
-a {
-  color: #1a73e8;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.reveal {
-  opacity: 0;
-  transform: translateY(28px);
-  transition: opacity .8s ease, transform .8s ease;
-}
-.reveal.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-@media (prefers-reduced-motion: reduce) {
-  .reveal { opacity: 1; transform: none; transition: none; }
-}
-</style>
-
-
-
+<link rel="stylesheet" href="style0.css">
 </head>
 
 <body>
@@ -73,11 +14,25 @@ a {
 <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
 </nav></header>
 
-<section class="hero">
-<small>COMPUTER SCIENCE STUDENT • TAIF UNIVERSITY</small>
-<h1>Aljazi Alghamdi</h1>
-<p class="sub">Passionate about Cybersecurity, Web Development, and Artificial Intelligence. Inspired by curiosity and continuous learning.</p>
-<a class="btn" href="#about">Explore</a>
+<section class="hero reveal">
+
+    <div class="hero-text">
+        <small>COMPUTER SCIENCE STUDENT • TAIF UNIVERSITY</small>
+
+        <h1>Aljazi Alghamdi</h1>
+
+        <p class="sub">
+            Passionate about Cybersecurity, Web Development, and Artificial Intelligence.
+            Inspired by curiosity and continuous learning.
+        </p>
+
+        <a class="btn" href="#about">Explore</a>
+    </div>
+
+    <div class="hero-image">
+        <img src="C:\Users\jazi\Downloads\port\images\profile.png" alt="Profile">
+    </div>
+
 </section>
 
 <section id="about">
@@ -90,22 +45,22 @@ I'm a Computer Science student expected to graduate in 2027. I enjoy understandi
 <section id="skills">
 <h2 class="reveal">Interests & Skills</h2>
 <div class="grid">
-<div class="card reveal"><h3>🔐 Cybersecurity</h3></div>
-<div class="card reveal"><h3>🌐 Web Development</h3></div>
-<div class="card reveal"><h3>🤖 Artificial Intelligence</h3></div>
-<div class="card reveal"><h3>HTML & CSS</h3></div>
-<div class="card reveal"><h3>C++</h3></div>
-<div class="card reveal"><h3>Linux environments</h3></div>
-<div class="card reveal"><h3>Computer Networks</h3></div>
+<div class="card card-alt reveal"><h3>🔐 Cybersecurity</h3></div>
+<div class="card card-alt reveal"><h3>🌐 Web Development</h3></div>
+<div class="card card-alt reveal"><h3>🤖 Artificial Intelligence</h3></div>
+<div class="card card-alt reveal"><h3>HTML & CSS</h3></div>
+<div class="card card-alt reveal"><h3>C++</h3></div>
+<div class="card card-alt reveal"><h3>Linux environments</h3></div>
+<div class="card card-alt reveal"><h3>Computer Networks</h3></div>
 </div>
 </section>
 
 <section>
 <h2 class="reveal">Currently Learning</h2>
 <div class="grid">
-<div class="card reveal">Mobile App Development</div>
-<div class="card reveal">Cybersecurity</div>
-<div class="card reveal">AI Fundamentals</div>
+<div class="card card-alt reveal">Mobile App Development</div>
+<div class="card card-alt reveal">Cybersecurity</div>
+<div class="card card-alt reveal">AI Fundamentals</div>
 </div>
 </section>
 
@@ -120,14 +75,18 @@ Participating in a two‑month summer training program focused on
 
 <section id="projects">
 <h2 class="reveal">Projects</h2>
-<div class="grid">
+<div class="card card-highlight reveal">
+<b>City of Roses</b><br><br>
+A tourism website showcasing the beauty of Taif.
+<br><br>
+<a href="https://jzi88.github.io/city-of-roses/">View the City of Roses project →</a>
 </div>
 </section>
 
 <section id="contact">
 <h2 class="reveal">Contact</h2>
 <div class="card reveal">
-<a href="https://github.com/jzi88">GitHub</a> • <a  href="https://www.linkedin.com/in/jazi-alghamdi-b6480a381?utm_source=share_via&utm_content=profile&utm_medium=member_ios">LinkedIn</a> • <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jaziii30jj@gmail.com" target="_blank" rel="noopener">Email </a>
+<a href="https://github.com/jzi88">GitHub</a> • <a href="https://www.linkedin.com/in/jazi-alghamdi-b6480a381?utm_source=share_via&utm_content=profile&utm_medium=member_ios">LinkedIn</a> • <a href="mailto:jaziii30jj@gmail.com">Email</a>
 </div>
 </section>
 
@@ -145,4 +104,85 @@ Participating in a two‑month summer training program focused on
   revealEls.forEach(el => io.observe(el));
 </script>
 
-</body></html>
+</body>
+
+<canvas id="network-canvas" style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:0.5;"></canvas>
+
+<script>
+const netCanvas = document.getElementById('network-canvas');
+const netCtx = netCanvas.getContext('2d');
+netCanvas.width = window.innerWidth;
+netCanvas.height = window.innerHeight;
+
+let mouse = { x: null, y: null };
+let dots = [];
+const dotCount = 60;
+
+for (let i = 0; i < dotCount; i++) {
+  dots.push({
+    x: Math.random() * netCanvas.width,
+    y: Math.random() * netCanvas.height,
+    vx: (Math.random() - 0.5) * 0.5,
+    vy: (Math.random() - 0.5) * 0.5
+  });
+}
+
+window.addEventListener('mousemove', (e) => {
+  mouse.x = e.clientX;
+  mouse.y = e.clientY;
+});
+
+window.addEventListener('resize', () => {
+  netCanvas.width = window.innerWidth;
+  netCanvas.height = window.innerHeight;
+});
+
+function drawNetwork() {
+  netCtx.clearRect(0, 0, netCanvas.width, netCanvas.height);
+
+  dots.forEach(dot => {
+    dot.x += dot.vx;
+    dot.y += dot.vy;
+
+    if (dot.x < 0 || dot.x > netCanvas.width) dot.vx *= -1;
+    if (dot.y < 0 || dot.y > netCanvas.height) dot.vy *= -1;
+
+    if (mouse.x) {
+      const dx = mouse.x - dot.x;
+      const dy = mouse.y - dot.y;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+      if (dist < 120) {
+        dot.x -= dx * 0.01;
+        dot.y -= dy * 0.01;
+      }
+    }
+
+    netCtx.beginPath();
+    netCtx.arc(dot.x, dot.y, 2, 0, Math.PI * 2);
+    netCtx.fillStyle = '#7288A7';
+    netCtx.fill();
+  });
+
+  for (let i = 0; i < dots.length; i++) {
+    for (let j = i + 1; j < dots.length; j++) {
+      const dx = dots[i].x - dots[j].x;
+      const dy = dots[i].y - dots[j].y;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+      if (dist < 130) {
+        netCtx.beginPath();
+        netCtx.moveTo(dots[i].x, dots[i].y);
+        netCtx.lineTo(dots[j].x, dots[j].y);
+        netCtx.strokeStyle = `rgba(114, 136, 167, ${1 - dist / 130})`;
+        netCtx.lineWidth = 0.6;
+        netCtx.stroke();
+      }
+    }
+  }
+
+  requestAnimationFrame(drawNetwork);
+}
+
+drawNetwork();
+</script>
+
+</html>
