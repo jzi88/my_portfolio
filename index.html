@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Aljazi Alghamdi — Computer Science student at Taif University, interested in Cybersecurity, Web Development, and AI.">
 <title>Jazi Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style0.css">
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -30,7 +33,7 @@
     </div>
 
     <div class="hero-image">
-        <img src="images/profile.png" alt="Profile">
+        <img src="profile.png" alt="Profile">
     </div>
 
 </section>
@@ -68,19 +71,49 @@ I'm a Computer Science student expected to graduate in 2027. I enjoy understandi
 <h2 class="reveal">Summer Training</h2>
 <div class="card reveal">
 <b>AI & Robotics Summer Training (2026)</b><br><br>
-Participating in a two‑month summer training program focused on
- Artificial Intelligence and Robotics.
+Spent two months in an intensive AI and Robotics summer training program,
+ taking projects from concept to working hardware. I built and trained machine
+  learning models in Python, developed real-time computer vision features like color
+   recognition using OpenCV, and wired up custom robotics using Arduino and ESP32
+    microcontrollers with servo motors. The hands-on builds really 
+sharpened my real-world troubleshooting and practical coding skills.
 </div>
 </section>
 
 <section id="projects">
+
 <h2 class="reveal">Projects</h2>
+
 <div class="card card-highlight reveal">
+
 <b>City of Roses</b><br><br>
 A tourism website showcasing the beauty of Taif.
 <br><br>
-<a href="https://jzi88.github.io/city-of-roses/">View the City of Roses project →</a>
+<a href="https://jzi88.github.io/city-of-roses/">View the City of Roses project </a>
+
+<br><br>
+<b>Restaurant Ordering System</b><br><br>
+a web-based system designed to simplify the ordering process inside restaurants.
+<br><br>
+<a href="https://jzi88.github.io/Restaurant-Ordering-System/">View the Restaurant project </a>
+
+<br><br>
+<b>Voice ai assistant</b><br><br>
+A web-based AI voice assistant that allows users to interact using speech or text.
+<br><br>
+<a href="https://github.com/jzi88/voice-ai-assistant">github repository link</a>
+
+<br><br>
+<b>Color Recognition</b><br><br>
+This project demonstrates real-time color recognition using OpenCV and Python. 
+<br><br>
+<a href="https://github.com/jzi88/Color-Recognition-using-OpenCV">github repository link</a>
+
+
+
 </div>
+
+
 </section>
 
 <section id="contact">
@@ -89,6 +122,38 @@ A tourism website showcasing the beauty of Taif.
 <a href="https://github.com/jzi88">GitHub</a> • <a href="https://www.linkedin.com/in/aljazi-alghamdi-b6480a381?utm_source=share_via&utm_content=profile&utm_medium=member_ios">LinkedIn</a> • <a href="mailto:jaziii30jj@gmail.com">Email</a>
 </div>
 </section>
+
+
+<!-- Resume Side Tab -->
+<div class="resume-tab">
+    <button class="resume-trigger" onclick="toggleResume()">
+        <span>RESUME</span>
+        <span class="resume-arrow">↓</span>
+    </button>
+
+    <div class="resume-panel" id="resumePanel">
+        <button class="resume-close" onclick="toggleResume()">×</button>
+
+        <div class="resume-icon">📄</div>
+
+        <h3>My Resume</h3>
+        <p>
+            View my education, experience, skills, and projects.
+        </p>
+
+        <div class="resume-buttons">
+            <a href="Aljazi_cv.pdf" target="_blank" class="resume-view">
+                View CV
+            </a>
+
+            <a href="Aljazi_cv.pdf" download class="resume-download">
+                Download PDF ↓
+            </a>
+        </div>
+    </div>
+</div>
+
+
 
 <footer> 2026 Aljazi • Computer Science Student</footer>
 
@@ -103,6 +168,8 @@ A tourism website showcasing the beauty of Taif.
   }, { threshold: 0.15 });
   revealEls.forEach(el => io.observe(el));
 </script>
+
+
 
 </body>
 
@@ -183,6 +250,14 @@ function drawNetwork() {
 }
 
 drawNetwork();
+
+function toggleResume() {
+    const panel = document.getElementById("resumePanel");
+
+    panel.classList.toggle("active");
+}
+
+
 </script>
 
 </html>
