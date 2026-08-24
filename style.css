@@ -12,12 +12,16 @@
 
 html {
   scroll-behavior: smooth;
+   overflow-x: hidden;
+  
 }
+
 
 body {
   font-family: Poppins, sans-serif;
   background: linear-gradient(160deg, #abc2df 0%, #83ade3 50%, #66a1e4 100%);
   color: var(--text);
+   overflow-x: hidden;
 }
 
 header {
