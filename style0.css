@@ -206,3 +206,197 @@ footer{
     position: relative;
     z-index: 2;
 }
+
+/* ================================
+   RESUME SIDE TAB
+================================ */
+
+.resume-tab {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9999;
+}
+
+/* Side button */
+
+.resume-trigger {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: none;
+
+    background: rgba(20, 20, 20, 0.85);
+    backdrop-filter: blur(12px);
+
+    color: white;
+    padding: 18px 12px;
+
+    border-radius: 12px 0 0 12px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    transition: all 0.3s ease;
+}
+
+.resume-trigger:hover {
+    padding-right: 18px;
+    background: rgba(35, 35, 35, 0.95);
+}
+
+.resume-arrow {
+    font-size: 16px;
+}
+
+/* Resume panel */
+
+.resume-panel {
+    position: absolute;
+    right: 0;
+    top: 50%;
+
+    width: 280px;
+
+    padding: 28px;
+
+    background: rgba(18, 18, 18, 0.96);
+    backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px 0 0 16px;
+
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+
+    transform: translate(110%, -50%);
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition: all 0.35s ease;
+}
+
+/* Open state */
+
+.resume-panel.active {
+    transform: translate(0, -50%);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Close button */
+
+.resume-close {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+
+    background: none;
+    border: none;
+
+    color: #aaa;
+
+    font-size: 24px;
+    cursor: pointer;
+
+    transition: color 0.2s ease;
+}
+
+.resume-close:hover {
+    color: white;
+}
+
+/* Icon */
+
+.resume-icon {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+/* Text */
+
+.resume-panel h3 {
+    margin: 0 0 8px;
+
+    color: white;
+
+    font-size: 22px;
+}
+
+.resume-panel p {
+    margin: 0 0 22px;
+
+    color: #aaa;
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* Buttons */
+
+.resume-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.resume-buttons a {
+    text-align: center;
+
+    padding: 11px 15px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: all 0.25s ease;
+}
+
+/* View */
+
+.resume-view {
+    background: white;
+    color: #111;
+}
+
+.resume-view:hover {
+    transform: translateY(-2px);
+}
+
+/* Download */
+
+.resume-download {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.resume-download:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+
+
+@media (max-width: 600px) {
+
+    .resume-trigger {
+        padding: 14px 9px;
+        font-size: 10px;
+    }
+
+    .resume-panel {
+        width: 240px;
+        padding: 24px;
+    }
+}
